@@ -8,15 +8,17 @@
     z-index: -1;
 
 
-#arrowdownoverlay {
-	position: absolute;
-	bottom: 150px;
-}    
+ 
 
 #name_heading{
 	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	left: 50px;
 }
+
+#arrowdownoverlay {
+	position: absolute;
+	bottom: 0px;
+}   
 
 #blank_space{
 	background-color: HoneyDew;
@@ -28,12 +30,12 @@
 	left: 20px;
 }
 
-#handspicture {
+/*#handspicture {
 	position: absolute;
-	/*padding: 10px, 5px, 5px, 10px;*/
+	padding: 10px, 5px, 5px, 10px;
 	height:300px;
 	bottom: 0px;
-}
+}*/
 
 #roadpicture {
 	position: absolute;
