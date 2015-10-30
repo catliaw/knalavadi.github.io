@@ -1,13 +1,42 @@
-#headersocial {
+#video {
+	position: : absolute;
+    display: block;
+    top: 0px;
+    width: 100%;
+    min-width: 1280px
+    height: 750px;
+    z-index: -1;
+
+
+#arrowdownoverlay {
 	position: absolute;
-	right: 20px;
+	bottom: 150px;
+}    
+
+#name_heading{
+	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	left: 50px;
 }
 
-#handspicture{
-	position: absolute;
-	bottom: 70px
+#blank_space{
+	background-color: HoneyDew;
+	top: 150px;
 }
 
-#roadpicture{
+.headersocial {
+	position: absolute;
+	left: 20px;
+}
 
+#handspicture {
+	position: absolute;
+	/*padding: 10px, 5px, 5px, 10px;*/
+	height:300px;
+	bottom: 0px;
+}
+
+#roadpicture {
+	position: absolute;
+	height:300px;
+	bottom: 300px;
 }
