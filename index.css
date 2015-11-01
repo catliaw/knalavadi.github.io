@@ -1,14 +1,26 @@
+body {
+	overflow: scroll;
+	background-color: #F8F8F8;
+}
+
 #video {
-	position: : absolute;
+	position: : fixed;
     display: block;
     top: 0px;
     width: 100%;
-    min-width: 1280px
-    height: 750px;
+/*    min-width: 1280px;*/
     z-index: -1;
+}
 
-
- 
+ #welcome{
+ 	position: absolute;
+ 	color: white;
+ 	font-size: 36;
+ 	text-align: center;
+ 	font:"helvetica neue", Helvetica, Arial, sans-serif;
+ 	bottom: 250px;
+ 	z-index: 1;
+ }
 
 #name_heading{
 	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -17,13 +29,11 @@
 
 #arrowdownoverlay {
 	position: absolute;
-	bottom: 0px;
+	bottom: 200px;
+	text-align: center;
+	z-index: 1;
 }   
 
-#blank_space{
-	background-color: HoneyDew;
-	top: 150px;
-}
 
 .headersocial {
 	position: absolute;
@@ -40,5 +50,5 @@
 #roadpicture {
 	position: absolute;
 	height:300px;
-	bottom: 300px;
+	bottom: 0px;
 }
