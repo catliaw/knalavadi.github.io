@@ -11,6 +11,15 @@ aside{
 	background-color: white;
 }
 
+a:link{
+	font-family: "Oswald",Helvetica,Arial,sans-serif;
+	color: #979797;
+}
+
+a:visited{
+	font-family: "Oswald",Helvetica,Arial,sans-serif;
+	color: #979797;
+}
 .homeabout{
 	top:0px;
 	font:"helvetica neue", Helvetica, Arial, sans-serif;
@@ -19,12 +28,33 @@ aside{
 }
 
 #home{
+	border-bottom: 0.188em solid transparent;
+	color: #979797;
+	font-family: "Oswald",Helvetica,Arial,sans-serif;
+	font-size: 1.125em;
+	margin: 0px 0.625em;
+	padding-bottom: 0.125em;
+	text-decoration: none;
+	text-transform: uppercase;
 	z-index: 10;
 }
+
+#about {
+	border-bottom: 0.188em solid transparent;
+	color: #979797;
+	font-family: "Oswald",Helvetica,Arial,sans-serif;
+	font-size: 1.125em;
+	margin: 0px 0.625em;
+	padding-bottom: 0.125em;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
 #welcomescribble{
 	/*text-align: right;*/
 	position: absolute;
-	right: 9px;
+	right: 15px;
 	top:0px;
 	z-index: 10;
 }
@@ -34,7 +64,7 @@ aside{
  	color: darkgrey;
  	font-size: 20;
  	text-align: center;
- 	right:15px;
+ 	right:25px;
  	font:"helvetica neue", Helvetica, Arial, sans-serif;
  	top: 110px;
  	z-index: 11;
@@ -65,8 +95,8 @@ aside{
 
 #arrowdown {
 	position: absolute;
-	bottom: 25px;
-	right: 10px;
+	bottom: 5px;
+	right: 5px;
 	z-index: 1;
 }   
 
