@@ -1,6 +1,6 @@
 body {
 	overflow: scroll;
-	background-color: #F8F8F8;
+	background-color: #FAFAEE;
 }
 
 nav {
@@ -10,8 +10,21 @@ nav {
 aside{
 	background-color: white;
 }
-.welcomescribble{
-	text-align: right;
+
+.homeabout{
+	top:0px;
+	font:"helvetica neue", Helvetica, Arial, sans-serif;
+	text-align: left;
+	z-index: 11;
+}
+
+#home{
+	z-index: 10;
+}
+#welcomescribble{
+	/*text-align: right;*/
+	position: absolute;
+	right: 9px;
 	top:0px;
 	z-index: 10;
 }
@@ -21,23 +34,24 @@ aside{
  	color: darkgrey;
  	font-size: 20;
  	text-align: center;
- 	right:20px;
+ 	right:15px;
  	font:"helvetica neue", Helvetica, Arial, sans-serif;
  	top: 110px;
- 	z-index: 1;
+ 	z-index: 11;
  }
 
 .headersocial {
 	position: absolute;
-	top: 15px;
-	left: 20px;
+	top: 135px;
+	right: 25px;
+/*	background-color: #E4E4E4;*/
 }
 
 #video {
 	position: : fixed;
     display: block;
-    top: 0px;
-    width: 750px;
+    bottom: 30px;
+    width: 975px;
     left-padding:5000px;
 	max-width: 1000px;
     z-index: -1;
@@ -51,7 +65,7 @@ aside{
 
 #arrowdown {
 	position: absolute;
-	bottom: 100px;
+	bottom: 25px;
 	right: 10px;
 	z-index: 1;
 }   
