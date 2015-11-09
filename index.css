@@ -65,7 +65,7 @@ a:visited{
  	font-size: 20;
  	text-align: center;
  	right:25px;
- 	font:"helvetica neue", Helvetica, Arial, sans-serif;
+ 	font:"Oswald", Helvetica, Arial, sans-serif;
  	top: 110px;
  	z-index: 11;
  }
@@ -95,7 +95,7 @@ a:visited{
 
 #arrowdown {
 	position: absolute;
-	bottom: 5px;
+	bottom: 0px;
 	right: 5px;
 	z-index: 1;
 }   
