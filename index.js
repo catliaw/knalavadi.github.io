@@ -1,11 +1,13 @@
-<SCRIPT LANGUAGE="Javascript">
-<!-- 
 
-var arrowdownoverlay = document.getElementById('arrowdownoverlay');
-var video= document.getElementById('video');
-video.addEventListener('progress', function() {
-    var show= video.currentTime>=5 && video.currentTime<10;
-    overlay.style.visibility= show? 'visible' : 'visible';
-  }, false);
--->
-</SCRIPT>
+
+	function bigIMG(x){
+		x.style.height = "35px";
+		x.style.width ="35px";
+}
+	function normalIMG(x){
+		x.style.height = "25px";
+		x.style.width = "25px";
+	}	
+
+
+$(document).ready(main);
