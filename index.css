@@ -20,6 +20,15 @@ a:visited{
 	font-family: "Oswald",Helvetica,Arial,sans-serif;
 	color: #979797;
 }
+
+.navbarnavbar-default{
+	font:"Oswald", Helvetica, Arial, sans-serif;
+	text-align: left;
+	background-color: #F4F4F4;
+	font-size: 1.125em;
+	z-index: 11;
+}
+
 .homeabout{
 	top:0px;
 	font:"helvetica neue", Helvetica, Arial, sans-serif;
@@ -27,34 +36,10 @@ a:visited{
 	z-index: 11;
 }
 
-#home{
-	border-bottom: 0.188em solid transparent;
-	color: #979797;
-	font-family: "Oswald",Helvetica,Arial,sans-serif;
-	font-size: 1.125em;
-	margin: 0px 0.625em;
-	padding-bottom: 0.125em;
-	text-decoration: none;
-	text-transform: uppercase;
-	z-index: 10;
-}
-
-#about {
-	border-bottom: 0.188em solid transparent;
-	color: #979797;
-	font-family: "Oswald",Helvetica,Arial,sans-serif;
-	font-size: 1.125em;
-	margin: 0px 0.625em;
-	padding-bottom: 0.125em;
-	text-decoration: none;
-	text-transform: uppercase;
-	z-index: 10;
-}
-
 #welcomescribble{
 	/*text-align: right;*/
 	position: absolute;
-	right: 15px;
+	right: 25px;
 	top:0px;
 	z-index: 10;
 }
@@ -101,4 +86,8 @@ a:visited{
 }   
 
 
+#backgroundimage{
+	width: 100%;
+	z-index:-25;
+}
 
