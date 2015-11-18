@@ -11,6 +11,11 @@ aside{
 	background-color: white;
 }
 
+table, th, td {
+   border: 50px white;
+
+}
+
 a:link{
 	font-family: "Oswald",Helvetica,Arial,sans-serif;
 	color: #979797;
@@ -22,71 +27,61 @@ a:visited{
 }
 
 .navbarnavbar-default{
+	position:fixed;
 	font:"Oswald", Helvetica, Arial, sans-serif;
-	text-align: left;
-	background-color: #FBFBFB;
+/*	font-color: darkgrey;*/
+	width:100px;
+	/*text-align: left;*/
+	background-color: rgba(255, 255, 255, 0.8);
 	font-size: 1.125em;
 	z-index: 11;
 }
-
-.homeabout{
-	top:0px;
-	font:"helvetica neue", Helvetica, Arial, sans-serif;
-	text-align: left;
-	z-index: 11;
+.navbarbrand{
+	right:0px;
 }
 
-#welcomescribble{
-	/*text-align: right;*/
-	position: absolute;
-	right: 25px;
-	top:0px;
-	z-index: 10;
-}
-
- #welcome{
- 	position: absolute;
- 	color: darkgrey;
- 	font-size: 20;
- 	text-align: center;
- 	right:25px;
- 	font:"Oswald", Helvetica, Arial, sans-serif;
- 	top: 110px;
- 	z-index: 11;
- }
-
-.headersocial {
-	position: absolute;
-	right: 155px;
-	padding-bottom: 10px;
-
-}
 
 #video {
 	position: : fixed;
     display: block;
     bottom: 50px;
-    width: 100%;
+    width: 90%;
     padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 0%;
 	max-width: 1500px;
     z-index: -1;
 }
 
+/*projects */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------*/
 
 #name_heading{
 	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	left: 50px;
 }
 
-#arrowup {
+#backtotop {
 	text-align: center;
 	z-index: 1;
 }   
 
 
 .container{
-	padding:0;
+	right:20%;
+	left:20%;
 	bottom:0px;
 }
