@@ -1,6 +1,6 @@
 body {
 	overflow: scroll;
-	background-color: #FAFAEE;
+	background-color: #FAFAFA;
 }
 
 nav {
@@ -15,6 +15,8 @@ table, th, td {
    border: 50px white;
 
 }
+
+
 
 /*table for projects */
 .Row
@@ -58,6 +60,9 @@ a:visited{
 	right:0px;
 }
 
+#verticalline{
+	left:150px;
+}
 
 #video {
 	position: : fixed;
@@ -74,8 +79,10 @@ a:visited{
 /*projects */
 
 #project-description{
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font:"Oswald", Helvetica, Arial, sans-serif;
 	color: #383838;
+	
 }
 .imageWrapper {
     position: relative;
@@ -106,6 +113,9 @@ a:visited{
     opacity: 0.8;
 }
 
+#projects {
+	background-color: #E8F0F0;
+}
 
 
 /*-------*/
