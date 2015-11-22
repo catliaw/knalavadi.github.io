@@ -1,4 +1,17 @@
 
+
+    var currentDate = new Date()
+    var day = currentDate.getDate()
+    var month = currentDate.getMonth() + 1
+    var year = currentDate.getFullYear()
+    document.write("<b>" + month + "/" + day + "/" + year + "</b>")
+
+
+// getElementbyId();
+// 	date=Date()
+// 	document.write(date)
+
+
 // social hover over magnify 
 	function bigIMG(x){
 		x.style.height = "35px";
