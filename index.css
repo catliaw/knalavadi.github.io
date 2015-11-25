@@ -18,8 +18,8 @@ table, th, td {
 
 
 
-/*table for projects */
-.Row
+/*table for projects row/column 1 */
+.Row1
 {
     display: table;
     width: 90%;
@@ -31,11 +31,35 @@ table, th, td {
 
 }
 
+.Column1
+{
+    display: table-cell;
+  
+}
+
+
+/* project line 2  (row and column 2) */
+
+.Row
+{
+    display: table;
+    width: 90%;
+/*    table-layout: fixed;*/
+    border-spacing: 20px;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top:2%;
+
+}
+
 .Column
 {
     display: table-cell;
   
 }
+
+
+
 
 /*nav bar */
 a:link{
@@ -85,7 +109,13 @@ a:visited{
     z-index: -1;
 }
 
-/*projects */
+
+
+/*projects row 1 */
+
+
+/*-----------------*/
+/*row 2 project */
 
 
 #project-description{
@@ -125,12 +155,12 @@ a:visited{
 }
 
 #projects {
+	width: 100%;
 	background-color: #E8F8F0;
 
 }
 
-
-/*-------*/
+/*------------------*/
 
 #name_heading{
 	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
