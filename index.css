@@ -122,10 +122,10 @@ a:visited{
 .imageWrapper .cornerLink {
     opacity: 0;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 0px;
     right: 0px;
-    padding: 2px 0px;
+    padding:40px 0 40px 0;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -136,9 +136,16 @@ a:visited{
     transition: opacity 500ms;
     
 }
+
+.imageWrapper:hover {
+    opacity: 0.7;
+/*    background:rgba(0,9,9,0.5)
+*/}
 .imageWrapper:hover .cornerLink {
-    opacity: 0.8;
+    opacity: 1;
+    background:rgba(0%,0%,0%,0.7)
 }
+
 
 #projects {
 	width: 100%;
@@ -154,6 +161,7 @@ a:visited{
     position: relative;
     width: 300px;
     height: 300px;
+
 }
 .imageWrapper1 img {
  display: block;
@@ -161,10 +169,10 @@ a:visited{
 .imageWrapper1 .cornerLink1 {
     opacity: 0;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 0px;
     right: 0px;
-    padding: 2px 0px;
+    padding:40px 0 40px 0;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -175,9 +183,16 @@ a:visited{
     transition: opacity 500ms;
     
 }
-.imageWrapper1:hover .cornerLink1 {
-    opacity: 0.8;
+
+.imageWrapper1:hover{ 
+    opacity: 0.7;
+
 }
+.imageWrapper1:hover .cornerLink1 {
+    opacity: 1;
+    background:rgba(0%,0%,0%,0.7)
+}
+
  
 /* long image*/
 .imageWrapper1long {
@@ -188,14 +203,15 @@ a:visited{
 }
 .imageWrapper1long img {
  display: block;
+ background:rgba(9,9,9,0.6)
 }
 .imageWrapper1long .cornerLink1 {
     opacity: 0;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 0px;
     right: 0px;
-    padding: 2px 0px;
+    padding:40px 0 40px 0;
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -206,10 +222,17 @@ a:visited{
     transition: opacity 500ms;
     
 }
-.imageWrapper1long:hover .cornerLink1 {
-    opacity: 0.8;
+.imageWrapper1long:hover{ 
+    opacity: 0.7;
+
 }
 
+.imageWrapper1long:hover .cornerLink1 {
+    opacity: 1;
+    background:rgba(0%,0%,0%,0.7)
+
+
+}
 
 
 /*------------------*/
