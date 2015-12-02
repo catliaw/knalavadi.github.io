@@ -126,6 +126,7 @@ a:visited{
     left: 0px;
     right: 0px;
     padding:40px 0 40px 0;
+
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -139,8 +140,7 @@ a:visited{
 
 .imageWrapper:hover {
     opacity: 0.7;
-/*    background:rgba(0,9,9,0.5)
-*/}
+}
 .imageWrapper:hover .cornerLink {
     opacity: 1;
     background:rgba(0%,0%,0%,0.7)
@@ -238,8 +238,39 @@ a:visited{
 /*------------------*/
 
 
+
+#resume{
+	right:20%;
+	left:20%;
+	bottom:0px;
+	padding-bottom: 5%;
+	background-color:  #989898;
+	opacity: .7;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	padding-left: 5%;
+}
+
+#resumename{
+	font-family: 'Cedarville Cursive', cursive;
+	color:white;
+	padding-left: -2%;
+
+}
+
+#resume_table{
+	width:90%;
+
+}
+
+/*_____footer_____*/
+
+
 #name_heading{
-	font: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
+
 
 }
 
@@ -249,10 +280,4 @@ a:visited{
 }   
 
 
-.container{
-	right:20%;
-	left:20%;
-	bottom:0px;
-	font-family: 'Open Sans', sans-serif;
-	text-decoration: none
-}
+
