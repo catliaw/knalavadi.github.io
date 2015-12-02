@@ -244,17 +244,17 @@ a:visited{
 	left:20%;
 	bottom:0px;
 	padding-bottom: 5%;
-	background-color:  #989898;
+/*	background-color:  #989898;*/
 	opacity: .7;
-	color:white;
+/*	color:white;*/
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
-	padding-left: 5%;
+	padding-left: 10%;
 }
 
 #resumename{
 	font-family: 'Cedarville Cursive', cursive;
-	color:white;
+/*	color:white;*/
 	padding-left: -2%;
 
 }
