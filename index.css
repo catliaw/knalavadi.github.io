@@ -239,16 +239,20 @@ a:visited{
 
 
 
+
+
+
+
+/*-----resume ----*/
 #resume{
 	right:20%;
 	left:20%;
 	bottom:0px;
 	padding-bottom: 5%;
-/*	background-color:  #989898;*/
 	opacity: .7;
-/*	color:white;*/
 	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
+
 	padding-left: 10%;
 }
 
@@ -259,19 +263,59 @@ a:visited{
 
 }
 
-#resume_table{
+#resume_list{
 	width:90%;
+	list-style-type: none;
 
 }
+
+/*-------------tech column --------*/
+#technologies{
+/*	padding-top:5%;*/
+}
+
+#tech_list{
+	padding-left: 35em;
+	list-style-type: none;
+/*	background-color: green;*/
+}
+
+#tech_list2{
+	margin-left: 15em;
+	list-style-type: none;
+/*	background-color: yellow;*/
+}
+
+#column2tech{
+/*	padding-top:7%;
+	padding-left:33%;*/
+	list-style-type: none;
+/*	background-color: black;*/
+}
+
+/*-------------work experience column --------*/
+#workExperience{
+	padding-top: 45%;
+}
+
+
+/*-------------education column --------*/
+#education{
+	padding-top: 25%;
+}
+
+
+
+
+
+
+
 
 /*_____footer_____*/
 
 
 #name_heading{
 	font-family: 'Open Sans', sans-serif;
-
-
-
 }
 
 #backtotop {
