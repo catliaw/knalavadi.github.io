@@ -18,6 +18,7 @@ table, th, td {
 
 
 
+
 /*table for projects row/column 1 */
 .Row1
 {
@@ -244,6 +245,12 @@ a:visited{
 
 
 /*-----resume ----*/
+
+.resumeAll {
+	min-width: 1440px;
+	max-width: 1140px;
+}
+
 #resume{
 	right:20%;
 	left:20%;
@@ -256,10 +263,10 @@ a:visited{
 	padding-left: 10%;
 }
 
-#resumename{
+#resume_name{
 	font-family: 'Cedarville Cursive', cursive;
-/*	color:white;*/
-	padding-left: -2%;
+	color:#989898;
+	padding-left: 5em;
 
 }
 
@@ -267,6 +274,10 @@ a:visited{
 	width:90%;
 	list-style-type: none;
 
+}
+
+#resume_table{
+	margin-bottom:300px;
 }
 
 /*-------------tech column --------*/
@@ -294,18 +305,114 @@ a:visited{
 }
 
 /*-------------work experience column --------*/
+
 #workExperience{
-	padding-top: 45%;
+	padding-top: 5em;
+	padding-left: 19em;
+	text-decoration: none;
+	opacity: .7;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#work_list{
+	padding-left: 21em;
+/*	padding-top: 10em;*/
+	list-style-type: none;
+	text-decoration: none;
+	background-color: green;
+	opacity: .8;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+
+#work1{
+	text-decoration: none;
+	color:grey;
+	padding-left: 45em;
+	padding-right: 45em;
+	max-width: 33%;
+	font-family: 'Open Sans', sans-serif;	
+/*	background-color: yellow;*/
+}
+
+#workdescription1{
+	text-decoration: none;
+	color:grey;
+	padding-left: 45em;
+	margin-right: 20%;
+	opacity: .8;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+#work2{
+	text-decoration: none;
+	color:grey;
+	padding-top: 2em;
+	padding-left: 45em;
+	padding-right: 45em;
+	max-width: 33%;
+	font-family: 'Open Sans', sans-serif;	
+/*	background-color: yellow;*/
+}
+
+#workdescription2{
+	text-decoration: none;
+	color:grey;
+	padding-left: 45em;
+	margin-right: 20%;
+	opacity: .8;
+	font-family: 'Open Sans', sans-serif;	
 }
 
 
 /*-------------education column --------*/
 #education{
-	padding-top: 25%;
+	padding-top: 5em;
+	padding-left: 19em;
+	text-decoration: none;
+	opacity: .7;
+	font-family: 'Open Sans', sans-serif;	
 }
 
 
 
+#edu1{
+	text-decoration: none;
+	color:grey;
+	padding-left: 45em;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+#edudescription1{
+	text-decoration: none;
+	position: absolute;
+	color:grey;
+	padding-left: 45em;
+	margin-right: 20%;
+	opacity: .8;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+#edu2{
+	text-decoration: none;
+	color:grey;
+	padding-top: 7em;
+	padding-left: 45em;
+	padding-right: 45em;
+	max-width: 33%;
+	font-family: 'Open Sans', sans-serif;	
+
+}
+
+#edudescription2{
+	text-decoration: none;
+	color:grey;
+	padding-left: 45em;
+	margin-right: 20%;
+	opacity: .8;
+	font-family: 'Open Sans', sans-serif;	
+}
 
 
 
