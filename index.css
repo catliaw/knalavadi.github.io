@@ -285,17 +285,10 @@ a:visited{
 
 #tech_list2{
 	margin-left: 5em;
-	/*list-style-type: none;*/
 }
 
-/*#tech_list3{
-	margin-left: 200px;
-	list-style-type: none;
-}*/
-
 #techdescription1{
-	/*text-decoration: none;*/
-	color:grey;
+	color:#181818;
 	padding-left: 32em;
 	margin-right: 10%;
 	opacity: .8;
@@ -356,7 +349,7 @@ a:visited{
 
 #workdescription1{
 	text-decoration: none;
-	color:grey;
+	color:#181818;
 	padding-left: 35em;
 	margin-right: 5%;
 	opacity: .8;
@@ -394,7 +387,7 @@ a:visited{
 
 #workdescription2{
 	text-decoration: none;
-	color:grey;
+	color:#181818;
 	padding-left: 35em;
 	margin-right: 5%;
 	opacity: .8;
