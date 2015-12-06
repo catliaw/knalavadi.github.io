@@ -110,7 +110,14 @@ a:visited{
 
 /*row 1 project */
 
-
+#projects{
+	font-family: 'Cedarville Cursive', cursive;
+	color:#181818;
+	opacity: .8;
+	font-size: 2.2em;
+	padding-left: 5em;
+	margin-bottom: 20px;
+}
 
 .imageWrapper {
     position: relative;
