@@ -1,11 +1,11 @@
 
 // todays date 
-    var currentDate = new Date()
-    var day = currentDate.getDate()
-    var month = currentDate.getMonth() + 1
-    var year = currentDate.getFullYear()
-    document.write("<b>" + month + "/" + day + "/" + year + "</b>")
-
+    // var currentDate = new Date()
+    // var day = currentDate.getDate()
+    // var month = currentDate.getMonth() + 1
+    // var year = currentDate.getFullYear()
+    // document.write("<b>" + month + "/" + day + "/" + year + "</b>")
+    // currentDate.appendChild('footer');
 
 
 
@@ -38,9 +38,8 @@ $(window).scroll(
 });
 
 
-
-
-// project image -text roll over 
-
+// slow video speed 
+var vid = document.getElementById("Video");
+vid.playbackRate = .5;
 
 $(document).ready(main);
