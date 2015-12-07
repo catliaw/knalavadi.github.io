@@ -1,63 +1,57 @@
-body {
-	overflow: scroll;
-	background-color: #FAFAFA;
-}
 
+body {
+ 	overflow: scroll; 
+
+}
 nav {
 	background-color: white;
-}
-
-aside{
-	background-color: white;
+	background: url('http://img04.deviantart.net/a1ba/i/2012/271/b/a/stock___watercolor_3_by_mayshing-d5g5nwm.jpg')
 }
 
 table, th, td {
-   border: 50px white;
+	border: 50px white;
 
 }
 
+
+footer{
+	background-color: white;
+	padding-top: 50px;
+}
+
+
+/*body needs : overflow: scroll;*/
 
 
 
 /*table for projects row/column 1 */
-.Row1
-{
-/*    display: table;*/
+.Row1{
     width: 90%;
-/*    table-layout: fixed;*/
     border-spacing: 25px;
     padding-left: 9%;
     padding-right: 9%;
     padding-top:20%;
     max-width: 1000px;
-
 }
 
-.Column1
-{
+.Column1{
     display: table-cell;
-  
 }
 
 
 /* project line 2  (row and column 2) */
 
-.Row
-{
+.Row{
     display: table;
     width: 90%;
-/*    table-layout: fixed;*/
     border-spacing: 20px;
     padding-left: 9%;
     padding-right: 9%;
     padding-top:2%;
-
 }
 
-.Column
-{
+.Column{
     display: table-cell;
-  
 }
 
 
@@ -76,7 +70,7 @@ a:visited{
 	position:fixed;
 	font:"Oswald", Helvetica, Arial, sans-serif;
 	width:100px;
-	background-color: rgba(255, 255, 255, 0.8);
+/*	background-color: rgba(255, 255, 255, 0.8);*/
 	font-size: 1.125em;
 	z-index: 11;
 }
@@ -89,12 +83,15 @@ a:visited{
 }
 
 #hello{
-	color:#989898;
+	color:#181818;
 	font-size: 2.2em;
 	font-family: 'Cedarville Cursive', cursive;
 	text-decoration: none;
 }
 
+#jumbotron_hello{
+	background-color: white;
+}
 
 #video {
 	position: : fixed;
@@ -115,7 +112,7 @@ a:visited{
 	color:#181818;
 	opacity: .8;
 	font-size: 2.2em;
-	padding-left: 5em;
+/*	padding-left: 5em;*/
 	margin-bottom: 20px;
 /*	background-color: yellow;*/
 }
@@ -135,7 +132,6 @@ a:visited{
     left: 0px;
     right: 0px;
     padding:40px 0 40px 0;
-
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -200,12 +196,14 @@ a:visited{
 
  
 /* long image*/
+
+/*need to fix hover over length*/
 .imageWrapper1long {
     position: relative;
     width: 600px;
     height: 300px;
     padding-left: 15px
-   /* z-index:10;*/
+   z-index:10;
 }
 .imageWrapper1long img {
  display: block;
@@ -242,30 +240,28 @@ a:visited{
 
 /*-----resume ----*/
 
-
-
 #resume{
 	opacity: .7;
 	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
 	color:#181818;
 }
+
+
+#jumbotron_resume {
+	background-color: white;
+}
+
 
 #resume_name{
 	font-family: 'Cedarville Cursive', cursive;
 	color:#181818;
 	opacity: .8;
 	font-size: 2.2em;
-	padding-left: 5em;
 	margin-bottom: 20px;
-}
-#resume_name:hover{
-	text-decoration: none;
 }
 
 #resume_list{
 	width:90%;
-	list-style-type: none;
 }
 
 
@@ -274,13 +270,10 @@ a:visited{
 #technologies{
 	color:#181818;
 	font-weight: bold;
+	padding-top: 1em;
+	padding-left: 5em;
 	font-size:1.3em;
 	position:relative;
-	margin-left: 150px;
-}
-
-#tech_list{
-	margin-left: 1em;
 }
 
 #tech_list2{
@@ -307,7 +300,7 @@ a:visited{
 
 #workExperience{
 	padding-top: 10em;
-	padding-left: 150px;
+	padding-left: 5em;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -319,9 +312,9 @@ a:visited{
 	text-decoration: none;
 	color:#181818;
 	opacity:.8;
-	padding-left: 27em;
+	padding-left: 26em;
 	padding-right: 45em;
-	line-height: 0.9em;
+	line-height: 0.6em;
 	font-size: 1.3em;
 	max-width: 33%;
 	font-family: 'Open Sans', sans-serif;	
@@ -330,10 +323,10 @@ a:visited{
 #work1_byline{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 39em;
-	line-height: 0.9em;
+	padding-left: 34em;
+	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
-	font-size: .9em;
+	font-size: 1em;
 	opacity:.8;	
 
 }
@@ -341,16 +334,17 @@ a:visited{
 #work1place{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
-	line-height: 0.9em;
+	padding-left: 34em;
+	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
 	opacity:.8;	
 }
 
 #workdescription1{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
+	padding-left: 34em;
 	margin-right: 5%;
 	opacity: .8;
 	font-family: 'Open Sans', sans-serif;	
@@ -362,33 +356,35 @@ a:visited{
 	opacity:.8;
 	font-size: 1.3em;	
 	padding-top: 4em;
-	padding-left: 27em;
-	line-height: 0.9em;
+	padding-left: 26em;
+	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;	
 }
 
 #work2_byline{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
-	line-height: 0.9em;
+	padding-left: 34em;
+	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
 	opacity:.8;	
 }
 
 #work2place{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
-	line-height: 0.9em;
+	padding-left: 34em;
+	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
 	opacity:.8;	
 }
 
 #workdescription2{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
+	padding-left: 34em;
 	margin-right: 5%;
 	opacity: .8;
 	font-family: 'Open Sans', sans-serif;	
@@ -398,7 +394,7 @@ a:visited{
 /*-------------education column --------*/
 #education{
 	padding-top: 2em;
-	padding-left: 150px;
+	padding-left: 5em;
 	text-decoration: none;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
@@ -410,7 +406,7 @@ a:visited{
 	text-decoration: none;
 	color:#181818;
 	opacity:.8;
-	padding-left: 27em;
+	padding-left: 26em;
 	font-size: 1.3em;
 	font-family: 'Open Sans', sans-serif;	
 }
@@ -418,9 +414,10 @@ a:visited{
 #edu1_byline{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
+	padding-left: 37.5em;
 	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
 	opacity:.8;	
 }
 
@@ -429,7 +426,7 @@ a:visited{
 	color:#181818;
 	opacity:.8;
 	padding-top: 2em;
-	padding-left: 27em;
+	padding-left: 26em;
 	font-size: 1.3em;
 	font-family: 'Open Sans', sans-serif;	
 }
@@ -437,9 +434,10 @@ a:visited{
 #edu2_byline{
 	text-decoration: none;
 	color:#181818;
-	padding-left: 35em;
+	padding-left: 37.5em;
 	line-height: 0.6em;
 	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
 	opacity:.8;	
 }
 
