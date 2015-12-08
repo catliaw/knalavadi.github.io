@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Find artist albulm</title>
-	<h1> find artist albumn using Spotify API</h1>
+	<title>About Artist</title>
+	<link rel="stylesheet" href="spotifyAPI.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<h2 id = "title_one"> Search an Artist</h2>
+	<h4 id ="title_byline">Find an artist's spotify URI, Genre and followers using the Spotify API </h4>
+	<br>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(function(){
@@ -16,10 +22,6 @@
 				$("#artistName").text(data.artists.items[0].name);
 			})
 			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
-				"popularity" + console.log("data", data);
-				$("#artistPop").text(data.artists.items[0].popularity);
-			})
-			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
 				console.log("data", data);
 				$("#artistType").text(data.artists.items[0].type);
 			})
@@ -30,22 +32,28 @@
 			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
 				console.log("data", data);
 				$("#artistGenre").text(data.artists.items[0].genres[0]);
-			})										
+			})			
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				console.log("data", data);
+				$("#artistFollowers").text(data.artists.items[0].followers.total) + console.log("followers");
+			})											
 		});
-		
-		
+	
 
 	});
 	</script>
+	
 </head>
 <body>
 	<p id="artistName"></p>
-	<p id="artistPop"></p>
 	<p id="artistType"></p>
 	<p id="artistURI"></p>
 	<p id="artistURI"></p>
 	<p id="artistGenre"></p>
-	<input id="searchArtist"></input>
-	<button id="ajaxSearch">Search for Artist</button>
+	<p id="artistFollowers"></p>
+	<input  id="searchArtist"></input>
+	<button type="submit" class="btn btn-default" id="ajaxSearch">Search for Artist</button>
+<img src="https://s-media-cache-ak0.pinimg.com/originals/c0/df/a7/c0dfa76d5fc8e48291e71177f8a2e1e2.jpg">
+
 </body>
 </html>
