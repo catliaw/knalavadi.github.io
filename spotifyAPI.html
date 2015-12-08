@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find artist albulm</title>
+	<h1> find artist albumn using Spotify API</h1>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var searchName
+		$("#ajaxSearch").click(function(){
+			searchName = $("#searchArtist")[0].value;
+			console.log("searchName", searchName);
+
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				console.log("data", data);
+				$("#artistName").text(data.artists.items[0].name);
+			})
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				"popularity" + console.log("data", data);
+				$("#artistPop").text(data.artists.items[0].popularity);
+			})
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				console.log("data", data);
+				$("#artistType").text(data.artists.items[0].type);
+			})
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				console.log("data", data);
+				$("#artistURI").text(data.artists.items[0].uri);
+			})			
+			$.get("https://api.spotify.com/v1/search?q="+searchName+"&type=artist", function(data){
+				console.log("data", data);
+				$("#artistGenre").text(data.artists.items[0].genres[0]);
+			})										
+		});
+		
+		
+
+	});
+	</script>
+</head>
+<body>
+	<p id="artistName"></p>
+	<p id="artistPop"></p>
+	<p id="artistType"></p>
+	<p id="artistURI"></p>
+	<p id="artistURI"></p>
+	<p id="artistGenre"></p>
+	<input id="searchArtist"></input>
+	<button id="ajaxSearch">Search for Artist</button>
+</body>
+</html>
