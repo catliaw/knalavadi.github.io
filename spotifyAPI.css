@@ -1,0 +1,58 @@
+#title_one{
+	font-color:#CD2626;
+	font-family: 'Oxygen', sans-serif;
+	margin-left: 5%;
+}
+
+#title_byline{
+	font-style: italic;
+	margin-left: 5%;
+}
+
+#searchArtist{
+	margin-left: 20%;
+	width:45%;
+	/*margin-top: 15%*/
+}
+
+
+
+#artistName{
+	font-color: #333;
+	font-family: 'Oxygen', sans-serif;
+	margin-right: 50%;
+	margin-left: 15%;
+}
+#artistType{
+	color: #333;
+	font-family: 'Oxygen', sans-serif;
+	margin-right: 50%;
+	margin-left: 15%;	
+}
+#artistURI{
+	color: #333;
+	font-family: 'Oxygen', sans-serif;
+	margin-right: 50%;
+	margin-left: 15%;	
+}
+#artistURI{
+	color: #333;
+	font-family: 'Oxygen', sans-serif;
+	margin-right: 50%;
+	margin-left: 15%;	
+}
+#artistGenre{
+	color: #333;
+	font-family: 'Oxygen', sans-serif;
+	margin-right: 50%;
+	margin-left: 15%;	
+}
+#artistFollowers{
+	color: #333;
+	font-family: 'Oxygen', sans-serif;	
+	margin-right: 50%;
+	margin-left: 15%;	
+
+}
+
+
