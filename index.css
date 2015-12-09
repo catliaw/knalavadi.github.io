@@ -1,33 +1,44 @@
 
 body {
- 	overflow: scroll; 
+
+ 	overflow-y: scroll;
+	overflow-x: hidden;
 
 }
 nav {
 	background-color: white;
-	background: url('http://img04.deviantart.net/a1ba/i/2012/271/b/a/stock___watercolor_3_by_mayshing-d5g5nwm.jpg')
+	background: url('http://1.bp.blogspot.com/-SrkiFmni6KM/U8sQJQEmmeI/AAAAAAAAN1c/DPiOxnCplXs/s1600/pink+wash.png');
+
+		http://www.bittbox.com/wp-content/uploads/2008/07/free_grungy_watercolor_texture_3.jpg
+
+		http://1.bp.blogspot.com/-ENUL_BzBCLA/UPWo6IGgMMI/AAAAAAAAGA8/HuwzsZUfy1s/s1600/cropped+watercolor.jpg
+
+
+
+		http://www.unsigneddesign.com/Watercolor%20Textures%202011/watercolor6.jpg
+
+
+
+		http://img04.deviantart.net/a1ba/i/2012/271/b/a/stock___watercolor_3_by_mayshing-d5g5nwm.jpg
 }
 
 table, th, td {
-	border: 50px white;
+	border-collapse: collapse;
 
 }
 
 
 footer{
-	background-color: white;
+
 	padding-top: 50px;
 }
-
-
-/*body needs : overflow: scroll;*/
 
 
 
 /*table for projects row/column 1 */
 .Row1{
     width: 90%;
-    border-spacing: 25px;
+    border-spacing: 25%;
 /*    padding-left: 9%;
     padding-right: 9%;*/
     padding-top:20%;
@@ -44,7 +55,7 @@ footer{
 .Row{
     display: table;
     width: 90%;
-    border-spacing: 20px;
+    border-spacing: 25%;
  /*   padding-left: 9%;
     padding-right: 9%;*/
     padding-top:2%;
@@ -70,7 +81,6 @@ a:visited{
 	position:fixed;
 	font:"Oswald", Helvetica, Arial, sans-serif;
 	width:100px;
-/*	background-color: rgba(255, 255, 255, 0.8);*/
 	font-size: 1.125em;
 	z-index: 11;
 }
@@ -86,23 +96,46 @@ a:visited{
 	color:#181818;
 	font-size: 2.2em;
 	font-family: 'Cedarville Cursive', cursive;
+	margin-left: 10%;
 	text-decoration: none;
+}	
+#krisha{
+	color:#181818;
+	font-size: 1.5em;
+	font-family: 'Cedarville Cursive', cursive;
+	text-decoration: none;
+
+}
+/* ------Video header ------*/
+
+#video_table{
+	margin-left: 2%;
+	background-color: :red;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom:7%;
 }
 
-#jumbotron_hello{
-	background-color: white;
-}
 
 #video {
 	position: : fixed;
     display: block;
-    bottom: 50px;
-    width: 90%;
-    padding-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 150%;
+    padding-bottom: 5%;
+    padding-top: 2%;  
+    margin-left: 20%;
 	max-width: 1200px;
     z-index: -1;
+/*    background-color: blue;*/
+}
+
+#about_me{
+	width: 25%;
+	height:90%;
+	margin-left: 70%;
+	margin-right: 0%;
+	font-size: 1em;
+/*	background-color: yellow;*/
 }
 
 /*row 1 project */
@@ -111,9 +144,8 @@ a:visited{
 	font-family: 'Cedarville Cursive', cursive;
 	color:#181818;
 	opacity: .8;
-	font-size: 2.2em;
-/*	padding-left: 5em;*/
-	margin-bottom: 20px;
+	font-size: 220%;
+	margin-bottom: 2%;
 /*	background-color: yellow;*/
 }
 
@@ -454,4 +486,28 @@ a:visited{
 	text-align: center;
 	z-index: 1;
 }   
+
+/*-------small screen resposive layout-------- */
+/*show during large screen*/
+@media (min-width:1200px){
+#small_screen{display:none;}
+#hello_small{display:none;}
+}
+/*show during small screen*/
+@media (max-width: 1200px){
+  #projects{display: none;}
+  #disappear_smallscreen{display:none;}
+  #video_table{ display: none;}
+  #small_screen{width:100%; text-align: center; padding-bottom:80%;}
+  #hello{display:none;}
+
+  #hello_small{
+	color:#181818;
+	font-size: 2.2em;
+	font-family: 'Cedarville Cursive', cursive;
+	margin-left: 10%;
+	text-decoration: none;}
+
+  }
+
 
