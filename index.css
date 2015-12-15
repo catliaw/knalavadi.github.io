@@ -120,24 +120,35 @@ a:visited{
 #video {
 	position: : fixed;
     display: block;
-    width: 150%;
+    width: 140%;
     padding-bottom: 5%;
     padding-top: 2%;  
-    margin-left: 20%;
+    margin-left: 14%;
 	max-width: 1200px;
     z-index: -1;
 /*    background-color: blue;*/
 }
 
 #about_me{
-	width: 25%;
+	width: 35%;
 	height:90%;
-	margin-left: 70%;
+	margin-left: 60%;
 	margin-right: 0%;
 	font-size: 1em;
+	float: center;
 /*	background-color: yellow;*/
 }
 
+#profile_picture{
+	height:50%;
+
+}
+
+#profile_text{
+	margin-top: 3%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
 /*row 1 project */
 
 #projects{
@@ -490,20 +501,53 @@ a:visited{
 /*-------small screen resposive layout-------- */
 /*show during large screen*/
 @media (min-width:1200px){
-#small_screen{display:none;}
+#small_screenintro{display:none;}
+#smallproject1{display:none;}
+#small_screenproject2{display:none;}
+#small_screenbutton1{display:none;}
+#small_screenbutton2{display:none;}
 #hello_small{display:none;}
 }
+
+
 /*show during small screen*/
 @media (max-width: 1200px){
-  #projects{display: none;}
-  #disappear_smallscreen{display:none;}
-  #video_table{ display: none;}
-  #small_screen{width:100%; text-align: center; padding-bottom:80%;}
-  #hello{display:none;}
+
+  #projects{
+  	display: none;}
+
+  #disappear_smallscreen{
+  	display:none;}
+
+  #video_table{
+  	display: none;}
+
+  #small_screenintro{
+  		width:100%; 
+  		text-align: left; 
+  		padding-bottom: 5%; 
+  		padding-left: 10%;
+  		font-size:2em;}
+
+  #small_screenproject1{
+  	text-align: center;
+  	padding-left: 20%;
+  }  		
+
+  #small_screenbutton1{
+  		text-align: center; 
+  		font-size:1em;}  
+  				
+  #small_screenbutton2{ 
+  		text-align: center; 
+  		font-size:1em;}
+
+  #hello{
+  		display:none;}
 
   #hello_small{
 	color:#181818;
-	font-size: 2.2em;
+	font-size: 4.2em;
 	font-family: 'Cedarville Cursive', cursive;
 	margin-left: 10%;
 	text-decoration: none;}
