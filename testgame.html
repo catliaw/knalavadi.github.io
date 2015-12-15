@@ -4,23 +4,37 @@
     <title>Memory Game</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <style>
+      #memoryGame{
+        margin-left:5%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.7em;
+      }
+
+      #byline{
+        margin-left:5%;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;   
+        margin-bottom: 5%;
+        color:    #909090      
+      }
+
       .card{
         width:100px;
         height:100px;
         float:left;
         margin:5px;
-        color:blue;
+        color:  #FF8C00;
         padding:5px;
-        border:solid 1px blue;
+        border:solid 1px #FF8C00;
       }
       
       #Playfield{
         width: 600px;
-        margin-left: 25%
+        margin-left: 30%
       }
       
       .down{
-        background:blue;
+        background: #FF8C00;
       }
       
       .clear{
@@ -49,9 +63,88 @@
         height:100px;
       }
 
+
+/*=========face up and card matched images======== */
+/*      san francisco */
       #one.up{
         background: url('http://images.wildtangent.com/mysterypistoleninsanfrancisco/big_icon.jpg');
+        background-size: 120px 120px;
       }
+      #one.matched{
+        background: url('http://images.wildtangent.com/mysterypistoleninsanfrancisco/big_icon.jpg');
+        background-size: 120px 120px;
+      }
+
+/*paris*/
+      #two.up{
+        background: url('https://static-s.aa-cdn.net/img/ios/916150096/c44aa1fe5a1f1b6b32e44eaa62554a9e?v=1');
+        background-size: 120px 120px;
+      }
+      #two.matched{
+        background: url('https://static-s.aa-cdn.net/img/ios/916150096/c44aa1fe5a1f1b6b32e44eaa62554a9e?v=1');
+        background-size: 120px 120px;
+      }
+      
+/*london*/
+      #three.up{
+        background: url('http://event.6sans.no/wp-content/uploads/2014/03/London.jpg');
+        background-size: 120px 120px;
+      }
+      #three.matched{
+        background: url('http://event.6sans.no/wp-content/uploads/2014/03/London.jpg');
+        background-size: 120px 120px;
+      }
+
+/*tokyo*/
+      #four.up{
+        background: url('https://noramennolife.files.wordpress.com/2014/05/223.jpg');
+        background-size: 120px 120px;
+      }
+      #four.matched{
+        background: url('https://noramennolife.files.wordpress.com/2014/05/223.jpg');
+        background-size: 120px 120px;
+      }
+
+/*rome*/
+      #five.up{
+        background: url('http://media-cdn.tripadvisor.com/media/photo-s/01/95/19/7e/rome.jpg');
+        background-size: 120px 120px;
+      }
+      #five.matched{
+        background: url('http://media-cdn.tripadvisor.com/media/photo-s/01/95/19/7e/rome.jpg');
+        background-size: 120px 120px;
+      }
+
+/*sydney    */  
+      #six.up{
+        background: url('http://www.atravelbook.com/wp-content/uploads/2012/11/Sydney-Opera-House.jpg');
+        background-size: 120px 120px;
+      }
+      #six.matched{
+        background: url('http://www.atravelbook.com/wp-content/uploads/2012/11/Sydney-Opera-House.jpg');
+        background-size: 120px 120px;
+      }
+
+/*seattle  */    
+      #seven.up{
+        background: url('http://images1.fanpop.com/images/photos/2200000/Seattle-Wallpaper-seattle-2232631-1024-768.jpg');
+        background-size: 120px 120px;
+      }
+      #seven.matched{
+        background: url('http://images1.fanpop.com/images/photos/2200000/Seattle-Wallpaper-seattle-2232631-1024-768.jpg');
+        background-size: 120px 120px;
+      }
+
+/*New york City  */     
+      #eight.up{
+        background: url('http://www.filmsofcrawford.com/sitebuildercontent/sitebuilderpictures/skyline.jpg');
+        background-size: 120px 120px;
+      }
+      #eight.matched{
+        background: url('http://www.filmsofcrawford.com/sitebuildercontent/sitebuilderpictures/skyline.jpg');
+        background-size: 120px 120px;
+      }
+/*================CSS End====================*/
 
 
 
@@ -60,28 +153,29 @@
   </head>
   
   <body>
-    <h4> Memory game!</h4>
+    <p id="memoryGame"> Memory Game</p>
+    <p id= "byline">See how fast you can match all the cards</p>
     <div id="Playfield">
       <div class="card down one" data-face="1" id="one"></div> 
-      <div class="card down two" data-face="2"><img src="" id="cardimage"></div>
-      <div class="card down three" data-face="3"><img src="" id="cardimage"></div>
-      <div class="card down four" data-face="4"><img src="" id="cardimage"></div>
-      <div class="card down five" data-face="5"><img src="" id="cardimage"></div>
-      <div class="card down six" data-face="6"><img src="" id="cardimage"></div>
-      <div class="card down seven" data-face="7"><img src="" id="cardimage"></div>
-      <div class="card down eight" data-face="8"><img src="" id="cardimage"></div>
+      <div class="card down two" data-face="2" id="two"></div>
+      <div class="card down three" data-face="3" id="three"></div>
+      <div class="card down four" data-face="4" id="four"></div>
+      <div class="card down five" data-face="5" id="five"></div>
+      <div class="card down six" data-face="6" id="six"></div>
+      <div class="card down seven" data-face="7" id="seven"></div>
+      <div class="card down eight" data-face="8" id="eight"></div>
 <!--       <div class="card down nine" data-face="9"></div>
       <div class="card down ten" data-face="10"></div>
       <div class="card down eleven" data-face="11"></div>
       <div class="card down twelve" data-face="12"></div> -->
-      <div class="card down one" data-face="1"><img src="" id="cardimage"></div>
-      <div class="card down two" data-face="2"><img src="" id="cardimage"></div>
-      <div class="card down three" data-face="3"><img src="" id="cardimage"></div>
-      <div class="card down four" data-face="4"><img src="" id="cardimage"></div>
-      <div class="card down five" data-face="5"><img src="" id="cardimage"></div>
-      <div class="card down six" data-face="6"><img src="" id="cardimage"></div>
-      <div class="card down seven" data-face="7"><img src="" id="cardimage"></div>
-      <div class="card down eight" data-face="8"><img src="" id="cardimage"></div>
+      <div class="card down one" data-face="1" id="one"></div> 
+      <div class="card down two" data-face="2" id="two"></div>
+      <div class="card down three" data-face="3" id="three"></div>
+      <div class="card down four" data-face="4" id="four"></div>
+      <div class="card down five" data-face="5" id="five"></div>
+      <div class="card down six" data-face="6" id="six"></div>
+      <div class="card down seven" data-face="7" id="seven"></div>
+      <div class="card down eight" data-face="8" id="eight"></div>
 <!--       <div class="card down nine" data-face="9"></div>
       <div class="card down ten" data-face="10"></div>
       <div class="card down eleven" data-face="11"></div>
@@ -101,7 +195,7 @@
         <p>Pairs matched: <span class="noPairs">0</span></p>
       </div> -->
     </div>
-    <p class="clear"><a href="#" id="reset">Click here to reset game</a></p>
+    <p class="clear"><a href="#" id="reset">Click here to start over</a></p>
     
     <script type="text/javascript">
       function twoCardsFaceUp(){
@@ -224,5 +318,6 @@
       var currentPlayer = "#player1";
       highlightCurrentPlayer(currentPlayer);
     </script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </body>
 </html>
