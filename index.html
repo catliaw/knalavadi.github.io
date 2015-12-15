@@ -55,26 +55,43 @@
 <br>
 
 
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <video id="video" loop ="true" autoplay = "autoplay">
+		<source src="http://webkea.co.nz/video/webkea_opener.mp4" type="video/mp4" align="center"></video><!-- credit for video banner from http://webkea.webflow.io-->
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+<div id="about_me"><img src="https://raw.githubusercontent.com/knalavadi/knalavadi.github.io/master/picture_krisha.jpeg" id="profile_picture"/><p id="profile_text">
+            	Hello my name is krisha. I live in the bay area and currently work at trulia where I quickly became interested in UI development. I finish school in December. In my free time I enjoy yoga, skiiing, swimming and hiking.</p>
+      </div>
+    </div>
 
 
-<table id ="video_table" >
-    <tbody>
-        <tr class = "jumbotron" style="background-color:white;">
-        	<a id ="hello"> Hello and Welcome </a>
-            <td><!-- <div class="container"> -->
-	  			<div> <video id="video" loop ="true" autoplay = "autoplay">
-				<source src="http://webkea.co.nz/video/webkea_opener.mp4" type="video/mp4" align="center"></video></td><!-- credit for video banner from http://webkea.webflow.io-->
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-            <td><br><div id="about_me"><img src="https://raw.githubusercontent.com/knalavadi/knalavadi.github.io/master/picture_krisha.jpeg" id="profile_picture"/><p id="profile_text">
-            	Hello my name is krisha. I live in the bay area and currently work at trulia where I quickly became interested in UI development. I finish school in December. In my free time I enjoy yoga, skiiing, swimming and hiking.</p></td>
-        </tr>	
-    </tbody>
-</table>
-</div>				
-</div>		
-	
-	
 
+<br>
+<br>
 
 
 <!-- first row projects -->
@@ -103,7 +120,7 @@
     <div class="Column">
 		<div class="imageWrapper">
     		<img src="http://media2.handmadecharlotte.com/wp-content/uploads/2013/09/Identic-Architecture-Memory-Game-by-Cinqpoints.jpg" alt="" style="width:100%; height:100%"/>
-    		<a href="http://google.com" class="cornerLink">Memory Game (under construction)</a>
+    		<a href="http://htmlpreview.github.com/?https://github.com/knalavadi/knalavadi.github.io/blob/master/testgame.html" class="cornerLink">Memory Game (under construction)</a>
     		<a id="project-description"> </a>
 		</div>	
     </div>    
@@ -156,6 +173,7 @@
 						     <li>HTML5, CSS, Javascript</li>
 						     <li>Verison Control</li>
 						     <li>Git and Github</li>
+						     <li>BaaS</li>
 						     <li>Working with APIs</li>
 					</div>	 
 					<div id="column2tech" style="float:left; margin:0;">
@@ -172,10 +190,7 @@
 </aside>
 
 	
-	  		<div id="workExperience"> Work Experience</div>
-  		
-
-
+	  				<div id="workExperience"> Work Experience</div>
 						     <p id="work1">Trulia</p>	
 						     <p id="work1place">San Francisco, CA</p>	
 						     <p id="work1_byline">July 2014 - current</p>		     		
@@ -185,7 +200,7 @@
 						     <p id="work2_byline">June - August 2013</p>		     		
 					    	    	<ul id="workdescription2"></a>Internship at a a high growth eBook aggregator company. Key assignments included international market analysis, competitor analysis, and supporting the account manager in her daily work including Quality Control and updating Salesforce CRM.</ul>
 
-					    	    	<div id="education"> Education</div>
+					<div id="education"> Education</div>
 						     <p id="edu1">Hackbright Academy</p>	
 						     <p id="edu1_byline">Computer Engineering Dec'15 </p>		     		
 					    	  
@@ -242,6 +257,15 @@
 		<script src="index.js"></script>
 
 
+
+<!-- ======bootstrap CDN ====== -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </footer>	
 </body>
