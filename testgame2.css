@@ -1,0 +1,193 @@
+.gameWrapper{
+        width:80%;
+        margin:0 auto;
+        background-color:white;
+
+      }
+
+      #headline{
+        width:60%;
+        display:inline-block;
+        float:left;
+        margin:0 auto;
+        padding:0px;
+/*        background-color: yellow;*/
+      }
+
+      #timerClock{
+        width:35%;
+        margin-top:2%;
+        margin-bottom:2%;
+        display:inline-block;
+        float:right;
+        padding:0px;
+/*        background-color: green;*/
+      }
+
+      #memoryGame{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.7em;
+        padding:0px;
+        margin-top:3%;
+      }
+
+      #byline{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;   
+        margin-bottom: 5%;
+        color:    #909090;
+        padding:0px;   
+      }
+
+      .card{
+        width:100px;
+        height:100px;
+        float:left;
+        margin:5px;
+        color:  #FF8C00;
+        padding:5px;
+        border:solid 1px #FF8C00;
+      }
+
+      #PlayfieldWrapper{
+        width:100%;
+        float:left;
+        display:inline-block;
+      }
+
+      #Playfield{
+        width: 600px;
+        margin-left: 30%
+      }
+      
+      .downcard{
+        background: #FF8C00;
+      }
+      
+      .clear{
+        clear:both;
+      }
+
+      #winText{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em; 
+        color: #909090; 
+        font-weight:bold;
+      }
+
+      #resetText{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em; 
+        color: #909090; 
+      }
+
+      #reset{
+        text-decoration:underline;
+        color: #909090;
+      }
+      
+      p {
+        margin:0; 
+        padding: 5px 15px 0 5px;
+      }
+      
+      #playerInfo{
+        padding:15px 0 35px 0;
+      }
+			
+      #player1 p, #player2 p{
+        float:left;
+      }
+      
+      .active{
+        background: yellow;
+      }
+
+      #cardimage{
+        width:100px;
+        height:100px;
+      }
+
+
+
+/*=========face up and card matched images======== */
+/*      san francisco */
+      #one.upcard{
+        background: url('http://images.wildtangent.com/mysterypistoleninsanfrancisco/big_icon.jpg');
+        background-size: 120px 120px;
+      }
+      #one.matched{
+        background: url('http://images.wildtangent.com/mysterypistoleninsanfrancisco/big_icon.jpg');
+        background-size: 120px 120px;
+      }
+
+/*paris*/
+      #two.upcard{
+        background: url('https://static-s.aa-cdn.net/img/ios/916150096/c44aa1fe5a1f1b6b32e44eaa62554a9e?v=1');
+        background-size: 120px 120px;
+      }
+      #two.matched{
+        background: url('https://static-s.aa-cdn.net/img/ios/916150096/c44aa1fe5a1f1b6b32e44eaa62554a9e?v=1');
+        background-size: 120px 120px;
+      }
+      
+/*london*/
+      #three.upcard{
+        background: url('http://event.6sans.no/wp-content/uploads/2014/03/London.jpg');
+        background-size: 120px 120px;
+      }
+      #three.matched{
+        background: url('http://event.6sans.no/wp-content/uploads/2014/03/London.jpg');
+        background-size: 120px 120px;
+      }
+
+/*tokyo*/
+      #four.upcard{
+        background: url('https://noramennolife.files.wordpress.com/2014/05/223.jpg');
+        background-size: 120px 120px;
+      }
+      #four.matched{
+        background: url('https://noramennolife.files.wordpress.com/2014/05/223.jpg');
+        background-size: 120px 120px;
+      }
+
+/*rome*/
+      #five.upcard{
+        background: url('http://media-cdn.tripadvisor.com/media/photo-s/01/95/19/7e/rome.jpg');
+        background-size: 120px 120px;
+      }
+      #five.matched{
+        background: url('http://media-cdn.tripadvisor.com/media/photo-s/01/95/19/7e/rome.jpg');
+        background-size: 120px 120px;
+      }
+
+/*sydney    */  
+      #six.upcard{
+        background: url('http://www.atravelbook.com/wp-content/uploads/2012/11/Sydney-Opera-House.jpg');
+        background-size: 120px 120px;
+      }
+      #six.matched{
+        background: url('http://www.atravelbook.com/wp-content/uploads/2012/11/Sydney-Opera-House.jpg');
+        background-size: 120px 120px;
+      }
+
+/*seattle  */    
+      #seven.upcard{
+        background: url('http://images1.fanpop.com/images/photos/2200000/Seattle-Wallpaper-seattle-2232631-1024-768.jpg');
+        background-size: 120px 120px;
+      }
+      #seven.matched{
+        background: url('http://images1.fanpop.com/images/photos/2200000/Seattle-Wallpaper-seattle-2232631-1024-768.jpg');
+        background-size: 120px 120px;
+      }
+
+/*New york City  */     
+      #eight.upcard{
+        background: url('http://www.filmsofcrawford.com/sitebuildercontent/sitebuilderpictures/skyline.jpg');
+        background-size: 120px 120px;
+      }
+      #eight.matched{
+        background: url('http://www.filmsofcrawford.com/sitebuildercontent/sitebuilderpictures/skyline.jpg');
+        background-size: 120px 120px;
+      }
+/*================CSS End====================*/
